@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ImageView
+        android:id="@+id/activity_login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_40"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/activity_login_id"
+            style="@style/EditTextTheme"
+            android:paddingRight="@dimen/size_50"
+            />
+
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/activity_login_scan"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_25"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_40"
+            android:background="@mipmap/drag" />
+    </RelativeLayout>
+    <EditText
+        android:layout_marginTop="@dimen/size_20"
+        android:id="@+id/activity_login_password"
+        style="@style/EditTextTheme"
+        />
+    <Button
+        android:id="@+id/activity_login_next"
+        style="@style/ButtonTheme"
+        android:text="@string/login"
+        android:layout_marginTop="@dimen/size_20"
+        />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TimeView">
+        <attr name="color_description" format="reference"/>
+        <attr name="color_time" format="reference"/>
+        <attr name="size" format="dimension"/>
+        <attr name="description_text" format="reference"/>
+        <attr name="time_text" format="reference"/>
+    </declare-styleable>
+
+</resources>

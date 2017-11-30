@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_out_of_storage"
+            style="@style/StrokeButtonTheme"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_weight="1"
+            android:text="@string/out_of_storage" />
+
+        <Button
+            android:id="@+id/fragment_add_oil"
+            style="@style/StrokeButtonTheme"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_weight="1"
+            android:text="@string/add_oil" />
+
+        <Button
+            android:id="@+id/fragment_repair"
+            style="@style/StrokeButtonTheme"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_weight="1"
+            android:text="@string/repair" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@drawable/blue_transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/out_in_mileage"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:background="@drawable/blue_transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextTheme"
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_20"
+                android:text="@string/data" />
+
+            <View
+                android:layout_width="@dimen/size_1"
+                android:layout_height="@dimen/size_20"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/fragment_data"
+                style="@style/TextTheme"
+                android:layout_width="@dimen/size_120"
+                android:layout_height="@dimen/size_20"
+                android:text="2017年11月" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_out_month_mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:gravity="center"
+            android:text="@string/out_month_mileage"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_15" />
+
+        <LinearLayout
+            android:id="@+id/fragment_out_of_storage_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10">
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <TextView
+                    style="@style/TextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:text="@string/time" />
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <TextView
+                    style="@style/TextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:text="@string/mileage_money" />
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:background="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10">
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:id="@+id/fragment_out_of_storage_date"
+                    style="@style/TextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:text="2017-11" />
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:id="@+id/fragment_out_of_storage_total"
+                    style="@style/TextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:text="8888" />
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:background="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10">
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:id="@+id/fragment_out_of_storage_etc"
+                    style="@style/TextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:text="@string/ETC" />
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:id="@+id/fragment_out_of_storage_money"
+                    style="@style/TextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_weight="1"
+                    android:text="6666" />
+
+                <View
+                    android:layout_width="@dimen/size_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:background="@color/blue" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_show_list_title"
+            style="@style/TextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/out_in_mileage" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_data_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:background="@color/blue"
+                android:layout_alignTop="@id/fragment_data_list"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:background="@color/blue"
+                android:layout_alignBottom="@id/fragment_data_list"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

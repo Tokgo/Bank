@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <include android:id="@+id/fragment_title" layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_below="@id/fragment_title"
+        android:id="@+id/fragment_task_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_task_unFinish"
+            style="@style/StrokeButtonTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/unFinish" />
+
+        <View
+            android:layout_width="@dimen/size_40"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/fragment_task_finished"
+            style="@style/StrokeButtonTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/FINISHED" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_task_data"
+        android:layout_below="@id/fragment_task_show"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="11月19日"
+        android:textSize="@dimen/text_size_15" />
+    <TextView
+        android:id="@+id/fragment_task_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/fragment_task_data"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/size_40"
+        android:text="6号线"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_15"
+        />
+    <View
+        android:layout_below="@id/fragment_task_data"
+        android:layout_marginTop="@dimen/size_10"
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/blue"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_task_list"
+        android:layout_below="@id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_below="@id/fragment_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/blue"
+        />
+
+</RelativeLayout>

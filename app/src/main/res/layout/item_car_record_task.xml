@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_30"
+    android:orientation="horizontal">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/size_30"-->
+    <!--android:orientation="horizontal">-->
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="match_parent"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/first_form"
+        style="@style/TextTheme"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/time" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="match_parent"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/second_form"
+        style="@style/TextTheme"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="出库里程" />
+
+    <View
+        android:id="@+id/third_line"
+        android:layout_width="@dimen/size_1"
+        android:layout_height="match_parent"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/third_form"
+        style="@style/TextTheme"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="入库里程" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="match_parent"
+        android:background="@color/blue" />
+    <!--</LinearLayout>-->
+</LinearLayout>

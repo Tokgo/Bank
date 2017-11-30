@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    >
+    <include layout="@layout/title" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <Button
+        android:id="@+id/fragment_id_scan"
+        style="@style/StrokeButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_64"
+        android:layout_marginLeft="@dimen/size_64"
+        android:layout_marginRight="@dimen/size_64"
+        android:text="@string/id_scan" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <Button
+        android:id="@+id/fragment_ticket_scan"
+        style="@style/StrokeButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_64"
+        android:layout_marginLeft="@dimen/size_64"
+        android:layout_marginRight="@dimen/size_64"
+        android:text="@string/ticket_scan" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/size_64"
+        android:layout_marginRight="@dimen/size_64"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/fragment_empty_package"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_package" />
+        <CheckBox
+            android:id="@+id/fragment_no_package"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_package"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/fragment_confirm"
+        style="@style/ButtonTheme"
+        android:text="@string/confirm"
+        android:layout_marginLeft="@dimen/size_64"
+        android:layout_marginRight="@dimen/size_64" />
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+</LinearLayout>

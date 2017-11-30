@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    >
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_out_of_storage"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/out_of_storage"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_add_oil"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/add_oil" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+    <Button
+        android:id="@+id/fragment_repair"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/repair" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+</LinearLayout>

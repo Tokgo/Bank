@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    >
+    <include layout="@layout/title"/>
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <com.ziya.bank.view.TimeView
+        android:id="@+id/fragment_repair_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40"
+        android:background="@drawable/blue_transparent"
+        />
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_160"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40">
+
+        <TextView
+            android:id="@+id/repair_reason_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/repair_reason"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/fragment_repair_reason"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_toRightOf="@+id/repair_reason_description"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/blue"
+            android:gravity="start"
+            android:paddingBottom="@dimen/size_10"
+            android:paddingTop="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:paddingLeft="@dimen/size_10"
+            android:background="@drawable/blue_transparent"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <Button
+        android:id="@+id/fragment_repair_reason_confirm"
+        style="@style/StrokeButtonTheme"
+        android:layout_height="@dimen/size_30"
+        android:text="@string/confirm" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/blue"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        />
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40">
+
+        <TextView
+            android:id="@+id/repair_money_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/repair_money"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            style="@style/EditTextTheme"
+            android:id="@+id/fragment_repair_money"
+            android:layout_toRightOf="@+id/repair_money_description"
+            android:layout_marginRight="0dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <Button
+        android:id="@+id/fragment_repair_money_confirm"
+        style="@style/StrokeButtonTheme"
+        android:layout_height="@dimen/size_30"
+        android:text="@string/confirm" />
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+</LinearLayout>

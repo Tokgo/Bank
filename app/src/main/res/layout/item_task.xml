@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_80">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80">
+        <TextView
+            android:id="@+id/task_id"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40"
+            android:textSize="@dimen/text_size_15"
+            android:text="px1231242"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/task_from"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40"
+            android:text="农业银行某某某支行"
+            android:textSize="@dimen/text_size_15"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/size_40"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:text="预计取送17:70"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:layout_marginRight="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:text="倒计时1:30"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/size_40"
+            android:layout_marginBottom="@dimen/size_5"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

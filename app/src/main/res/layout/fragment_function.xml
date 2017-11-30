@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_ticket_conversion"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/ticket_conversion"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_ticket_transfer"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/ticket_transfer" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+    <Button
+        android:id="@+id/fragment_package"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/normal_package" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_sort_center"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/sort_center" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_car_record"
+        style="@style/StrokeButtonTheme"
+        android:text="@string/car_record"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+</LinearLayout>

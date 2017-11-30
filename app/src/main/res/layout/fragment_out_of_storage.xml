@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <com.ziya.bank.view.TimeView
+        android:id="@+id/fragment_out_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40"
+        android:background="@drawable/blue_white" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40">
+
+        <TextView
+            android:id="@+id/out_of_mileage_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/out_of_mileage"
+            style="@style/TextTheme"
+            />
+
+        <EditText
+            android:id="@+id/fragment_out_of_storage_mileage"
+            style="@style/EditTextTheme"
+            android:layout_toRightOf="@+id/out_of_mileage_description"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_out_of_storage_confirm"
+        style="@style/StrokeButtonTheme"
+        android:layout_height="@dimen/size_30"
+        android:text="@string/confirm" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40">
+
+        <TextView
+            android:id="@+id/put_in_mileage_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/put_in_mileage"
+            style="@style/TextTheme"
+            />
+
+        <EditText
+            android:id="@+id/fragment_put_in_storage_mileage"
+            style="@style/EditTextTheme"
+            android:layout_toRightOf="@+id/put_in_mileage_description"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_put_in_storage_confirm"
+        style="@style/StrokeButtonTheme"
+        android:layout_height="@dimen/size_30"
+        android:text="@string/confirm" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/blue"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <com.ziya.bank.view.TimeView
+        android:id="@+id/fragment_month_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40"
+        android:background="@drawable/blue_white" />
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40">
+
+        <TextView
+            android:id="@+id/begin_month_mileage_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/begin_month_mileage"
+            style="@style/TextTheme"
+            />
+
+        <EditText
+            android:id="@+id/fragment_begin_month_mileage"
+            style="@style/EditTextTheme"
+            android:layout_toRightOf="@+id/begin_month_mileage_description"
+            android:layout_marginRight="0dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40">
+
+        <TextView
+            android:id="@+id/end_month_mileage_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/end_month_mileage"
+            style="@style/TextTheme"
+            />
+
+        <EditText
+            android:id="@+id/fragment_end_month_money"
+            style="@style/EditTextTheme"
+            android:layout_toRightOf="@+id/end_month_mileage_description"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/fragment_money_confirm"
+        style="@style/StrokeButtonTheme"
+        android:layout_height="@dimen/size_30"
+        android:text="@string/confirm" />
+    <View
+        android:layout_width="@dimen/size_1"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null" />
+</LinearLayout>
